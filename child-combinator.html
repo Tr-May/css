@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Combinator</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /** code for descendant selector will be here**/
+    </style>
+  </head>
+  <body>
+    <!-- 
+      selects all elements that are the direct children of a specified element,
+    and ( > ) is used.
+   -->
+    <h1>Child Combinators</h1>
+    <div class="parent-div">
+      <p>
+        I'm the direct child of the parent-div. So, the rules will be affected
+        in me.
+      </p>
+      <div class="inner-div">
+        <p>I'm not the direct child. So, the rules won't be affected in me.</p>
+      </div>
+    </div>
+    <p>
+      I'm outside of the parent-div. So, the rules won't also be affected in me.
+    </p>
+  </body>
+</html>

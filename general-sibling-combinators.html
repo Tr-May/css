@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Sibling Combinators</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main {
+        font-weight: bold;
+        text-shadow: 2px 2px 2px #ddd;
+      }
+      .main ~ p {
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        selects all elements that are next siblings of a specified element, and (~)
+    is used
+ -->
+    <h1>General Siblings Combinators</h1>
+    <div class="parent-div">
+      <p>
+        I'm the general siblings of other paragraphs. But, I won't be affected
+        by the rules since I'm the previous sibling.
+      </p>
+      <p class="main">
+        The other siblings of me will be affected by the rules.
+      </p>
+      <p>I'm the next siblings. So, the rule will be applied in me.</p>
+      <p>
+        I'm the also one of the next siblings. So, the rule will also be applied
+        in me.
+      </p>
+    </div>
+    <p>I'm outside of the parent-div. So, the rule won't be applied in me.</p>
+  </body>
+</html>

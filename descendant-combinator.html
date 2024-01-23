@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant Selector Example</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /** code for descendant selector will be here**/
+    </style>
+  </head>
+  <body>
+    <!-- 
+      selects all elements that are descendants (both direct and indirect) of a specified element, 
+      and a single space (“ “) is used.  
+    -->
+    <h1>Descendant Siblings Combinators</h1>
+    <div class="parent-div">
+      <p>I'm the direct child. So, the style rules will be applied in me.</p>
+      <div class="child-div">
+        <p>
+          I'm not a direct child. But, I'm inside the parent-div. So, the style
+          rules will be applied in me too.
+        </p>
+      </div>
+    </div>
+    <p>
+      I'm outside of parent-div. So, the style rules will not be applied in me.
+    </p>
+  </body>
+</html>

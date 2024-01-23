@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class Selector</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      /* Style for a link when hovered */
+      a:hover {
+      }
+
+      /* Style for every other list item */
+      li:nth-child(even) {
+      }
+
+      /* Style for the first paragraph in a section */
+      section p:first-of-type {
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    a keyword added to a selector that specifies a special state of the selected
+    element(s).
+    The a:hover pseudo-class is used to style a link when it is being hovered over.
+    The li:nth-child(even) pseudo-class is used to select every even list item and apply a background color.
+    The section p:first-of-type pseudo-class is used to select the first paragraph in a section and make it bold.
+    -->
+    <h1>Pseudo Class Selector</h1>
+    <a href="#">This is a link</a>
+
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <section>
+      <p>This is the first paragraph in the section.</p>
+      <p>Another paragraph in the section.</p>
+    </section>
+  </body>
+</html>
