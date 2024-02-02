@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Internal Styles</title>
+    <style>
+      h2 {
+        background-color: orange;
+        color: white;
+        text-align: center;
+        /* text-align: left (default), right, center, justify; */
+      }
+    </style>
   </head>
   <body>
     <h1>Cascading Stylesheets</h1>
@@ -15,7 +24,7 @@
       from presentation, enabling consistent styling across multiple pages and
       easy maintenance of web design.
     </p>
-    <h2>Inline Stylesheet</h2>
+    <h2 style="color: blue">Inline Stylesheet</h2>
     <p>
       An inline stylesheet is CSS code that is directly embedded within the HTML
       document, using the "style" attribute. This allows for the styling of a

@@ -1,0 +1,17 @@
+CSS
+- Cascading Stylesheet
+- for design and style
+
+
+html => elements, attributes, values
+
+selector{
+  property : value;
+  declaration;
+  declaration;
+}
+selector => elements, id, class, 
+types of css
+- inline stylesheet
+- internal stylesheet
+- external styelsheet
